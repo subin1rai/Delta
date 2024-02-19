@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        select the subject
+        <select title="red" name="sub" id="subject">
+          <option>Select your subject</option>
+          <option value="eng">English</option>
+          <option value="sci">Science</option>
+          <option value="math">Math</option>
+        </select>
+      </div>
+
+      <br />
+      <div>
+        <input title="age" type="checkbox" id="grade" name="grade" value="18" />
+        <label for="grade">18</label>
+        <input
+          title="age"
+          type="checkbox"
+          id="grade+1"
+          name="grade"
+          value="19"
+        />
+        <label for="gender+1">19</label>
+      </div>
+      <div>
+        <input
+          title="radio"
+          type="radio"
+          name="gender"
+          id="male"
+          value="Male"
+        />
+        <label for="male">Male</label>
+        <input
+          title="radio"
+          type="radio"
+          name="gender"
+          id="female"
+          value="Female"
+        />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <label for="vol">Select your volume range</label>
+        <input
+          title="range"
+          type="range"
+          name="vol"
+          id="vol"
+          min="0"
+          max="100"
+        />
+      </div>
+      <button>submit</button>
+    </form>
+  </body>
+</html>

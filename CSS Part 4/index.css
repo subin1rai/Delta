@@ -1,0 +1,9 @@
+div{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(60, 207, 158);
+    margin: 0 auto;
+    margin-top: 10px;
+    transform: rotate(45deg);
+    border-radius: 30px;
+}

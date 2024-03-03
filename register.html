@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register your account.</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    body >div{
+        display: inline;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        background-image: url("iic.jpg");
+        opacity: 50%;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    form {
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 0px 0 10px ;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>Register your account.</h1>
+    <form action="../MyFirstServlet" method="post">
+        User Name: <input type="text" name="userName"/> <br>
+        User Age: <input type="text" name="userAge"/> <br>
+        <input type="submit" value="Register" >
+    </form>
+    </div>
+</body>
+</html>

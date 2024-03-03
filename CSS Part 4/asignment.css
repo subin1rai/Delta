@@ -49,10 +49,11 @@
         "myPic". Also, set transparency of this div to 50%. */
 
 #myPic {
+  direction: column;
   width: 200px;
   height: 200px;
   background: pink;
   background-image: url("boy.jpg");
   background-size: cover;
-  opacity: 50%;
+
 }

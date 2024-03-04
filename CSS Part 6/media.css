@@ -1,0 +1,10 @@
+h1{
+    background-color: rgb(156, 186, 156);
+}
+
+
+@media(min-width:400px ) and (max-width:800px){
+h1{
+  background-color: aqua;  
+}
+}

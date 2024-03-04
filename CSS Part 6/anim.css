@@ -1,0 +1,29 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: teal;
+    text-align: center;
+    animation:  withAnimation;
+    animation-duration: 5s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes fontAnimation {
+    from{font-size: 20px;}
+    to{font-size: 80px;}
+}
+
+@keyframes withAnimation {
+    from{with: 0px;
+        background-color: lightblue;
+    border-radius: 50%;
+
+    }
+    to{width: 1200px;
+        background-color: lightgreen;
+    }
+}

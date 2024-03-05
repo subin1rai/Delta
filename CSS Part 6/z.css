@@ -1,0 +1,21 @@
+body > div{
+    height: 300px;
+    width: 400px;
+}
+
+.two{
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+   
+}
+.one{
+    position: relative;
+    /* z-index: 2; */
+}
+.three{
+    position: relative;
+    bottom: 500px;
+    left: 230px;
+
+}

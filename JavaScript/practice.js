@@ -86,3 +86,92 @@ low = str.toLowerCase();
 
 console.log(up);
 console.log(low);
+
+
+
+//slice 
+let colors = ["red", "green", "blue", "orange", "yellow"];
+
+console.log(colors.splice(3));
+console.log(colors);
+console.log(colors.splice(0,2,"purplw", "black"));
+console.log(colors);
+
+
+
+//sort 
+colors.sort();
+
+console.log(colors);
+
+
+let months = ["january","july","march","august"]
+
+console.log(months.splice(0,2,"july","june"))
+console.log(months)
+
+//2
+let lang = ['c', 'c++','html','javascript','python','java','c#','sql']
+reverse = lang.reverse().indexOf("javascript")
+console.log(reverse);
+
+
+//tic tac toe
+
+let tictac = [['X','null','O'],['null','X','null'],['O','null','X']]
+
+console.log(tictac);
+console.log(
+tictac[0][1] = '0'
+
+);
+
+//q1
+let numb = [7,9,0,-2]
+let n = 3;
+console.log(numb.splice(0,n));
+
+//q2
+let numw = [7,9,0,-2];
+let u = 3;
+let ans = numw.slice(numw.length-u);
+console.log(ans);
+
+//q3
+// let value = prompt("Enter name ");
+
+// if(value.length == 0){
+//     console.log("empty string");
+// }
+// else{
+//     console.log("STRING IS NOT EMPTY");
+// }
+
+// 4
+// let character = prompt("enter character");
+// if(character == character.toLowerCase()){
+//     console.log("lower case");
+// }
+// else{
+//     console.log("not lower case");
+// }
+
+//5
+// let names = prompt("Enter name");
+// console.log(names);
+// console.log(names.trim());
+
+
+//6
+let arr = ["Subin", "Rai", 12, 3, 5 , 6];
+let ser= 132;
+
+if(arr.indexOf(ser) != -1){
+    console.log("elements exist");
+
+}
+
+else{
+    console.log("elements not exist");
+}
+

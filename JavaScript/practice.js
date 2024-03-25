@@ -175,3 +175,19 @@ else{
     console.log("elements not exist");
 }
 
+
+//loop
+// for(let i=1; i<=5; i++){
+//     console.log(i);
+// }
+
+// //to print odd 
+// for(let i=1; i<=15; i= i+2){
+//     console.log(i);
+// }
+
+let t = prompt("Enter table number");
+t = parseInt(t);
+for( i=t; i<= t*10; i= i+t){
+    console.log(i);
+}

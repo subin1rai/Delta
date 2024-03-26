@@ -1,0 +1,19 @@
+
+
+body{
+    background-color: black;
+    
+}
+.main{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 30vh;
+    margin-left: 50vh;
+}
+.drop-down #options{
+    border: none;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 4rem;
+}

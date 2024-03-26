@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE MUTU</title>
+    <link rel="stylesheet" href="good.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="drop-down">
+        <select name="pixel" id="options">
+          <option value=""></option>
+          <option value="144p">144p</option>
+          <option value="240p">240p</option>
+          <option value="480p">480p</option>
+          <option value="720p">720p</option>
+          <option value="1080p">1080p</option>
+        </select>
+      </div>
+      <div id="image-container">
+        <img src="" id="image" style="display: none" />
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("options")
+        .addEventListener("change", function () {
+          var selectedValue = this.value;
+          var imageSrc = "";
+
+          switch (selectedValue) {
+            case "144p":
+              imageSrc = "144.jpg";
+              break;
+            case "240p":
+              imageSrc = "240.jpg";
+              break;
+            case "480p":
+              imageSrc = "480.jpg";
+              break;
+            case "720p":
+              imageSrc = "780.jpg";
+              break;
+              case "1080p":
+              imageSrc = "1080.jpg";
+              break;
+            // Add cases for other resolutions as needed
+          }
+
+          var imageContainer = document.getElementById("image-container");
+          var image = document.getElementById("image");
+
+          if (imageSrc) {
+            image.src = imageSrc;
+            image.style.display = "block";
+          } else {
+            image.style.display = "none";
+          }
+        });
+
+        
+    </script>
+  </body>
+</html>

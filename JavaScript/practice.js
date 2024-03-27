@@ -221,3 +221,29 @@
 //     }
 //  }
 //  console.log(arr);
+
+// q2 
+
+const max = prompt("enter the maximum number");
+
+const random = Math.floor(Math.random()*max)+1;
+console.log(random);
+
+let guess = prompt("guess the numberr")
+while(true){
+    if(guess == "quit"){
+        console.log("quitting app");
+        break;
+    }
+    if(guess == random){
+        console.log("congrats");
+        break;
+    } else if(guess < random){
+        guess =  prompt("your guess is small again");
+    }else{
+        guess =  prompt("your guess is high again");
+    }
+//else{
+//        guess =  prompt("Please try again");
+//     }
+}

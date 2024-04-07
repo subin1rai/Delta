@@ -56,3 +56,37 @@ let maxa = num.reduce((max,el)=>{
   }
 });
 console.log(maxa);
+
+
+//spread
+
+let arr = [1, 2,3,4,5];
+let newArr = [...arr];
+
+console.log(newArr);
+let name = [..."Subin"]
+
+console.log(name);
+
+let odd = [1, 3, 5, 7];
+let even = [0, 2,4,6,8];
+
+let nums = [...odd, ...even];
+
+console.log(nums);
+
+
+//spread with object literals
+
+let data ={
+  email : "subinbantawa@gmail.com",
+  password : "abc",
+
+} 
+let newdata = {...data, id: 123 ,names : "subin"}
+
+console.log(newdata);
+  
+let me = {..."subin"};
+
+console.log(me);

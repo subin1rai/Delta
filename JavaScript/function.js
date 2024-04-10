@@ -90,3 +90,68 @@ console.log(newdata);
 let me = {..."subin"};
 
 console.log(me);
+
+function sum(...args){
+  return args.reduce((sum,el)=> sum + el);
+
+}
+
+// function mins(a,b,c){
+//   console.log(arguments);
+// }
+
+function min(...args){
+  return args.reduce((min,el)=>{
+    if(min > el){
+      return el;
+    }
+    else{
+      return min;
+    }
+  })
+}
+
+//destructuring
+
+let neames = ["Subin","Rabin","tony","sujal","ayush"]
+let [winner,runnerup,...others] = neames;
+console.log(neames);
+console.log(winner);
+console.log(runnerup);
+console.log(winner,runnerup);
+console.log(others);
+
+
+const student = {
+    name : "Karan",
+    age : "17",
+    city : "Bangalore",
+    subjeect: ["nepali", "english", "math"],
+    username: "Karan@1",
+    password: "Karan@123"
+  
+};
+// let username = student.username;
+// let password= student.password;
+
+let{username, password} = student;
+
+
+//q1
+nums = [1,2,3,4,5];
+
+const square = nums.map((nums)=> nums*nums);
+console.log(square);
+
+const plus = square.reduce((ace,cc)=> ace + cc );
+console.log(plus);
+
+let avg = plus/nums.length;
+console.log(avg);
+
+//uppercase
+
+up = ["subin","smriti"];
+
+const upcase =  up.map((strings)=> strings.toUpperCase());
+console.log(upcase);

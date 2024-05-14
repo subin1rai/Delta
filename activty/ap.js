@@ -44,3 +44,5 @@ saveToData('SUBINRAI').then(()=> {
 .catch(()=>{
     console.log('rejected');
 })
+
+// JSON
